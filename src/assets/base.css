@@ -1,0 +1,149 @@
+:root {
+  --bold-weight: 600;
+  --display-large-font-size: 43px;
+  --display-large-line-height: 48px;
+  --display-medium-font-size: 34px;
+  --display-medium-line-height: 39px;
+  --display-small-font-size: 27px;
+  --display-small-line-height: 33px;
+  --headline-large-font-size: 24px;
+  --headline-large-line-height: 30px;
+  --headline-medium-font-size: 21px;
+  --headline-medium-line-height: 27px;
+  --headline-small-font-size: 18px;
+  --headline-small-line-height: 27px;
+  --body-large-font-size: 14px;
+  --body-large-line-height: 20px;
+  --body-medium-font-size: 12px;
+  --body-medium-line-height: 28px;
+  --bg-main : #EFEFEF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+  color: black;
+}
+
+h1 {
+  font-size: var(--display-large-font-size);
+  line-height: var(--display-large-line-height);
+}
+
+h2 {
+  font-size: var(--display-medium-font-size);
+  line-height: var(--display-medium-line-height);
+}
+
+h3 {
+  font-size: var(--display-small-font-size);
+  line-height: var(--display-small-line-height);
+}
+
+h4 {
+  font-size: var(--headline-large-font-size);
+  line-height: var(--headline-large-line-height);
+}
+
+h5 {
+  font-size: var(--headline-medium-font-size);
+  line-height: var(--headline-medium-line-height);
+}
+
+h6 {
+  font-size: var(--headline-small-font-size);
+  line-height: var(--headline-small-line-height);
+}
+
+p,li,a {
+  font-size: var(--body-large-font-size);
+  line-height: var(--body-large-line-height);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --display-large-font-size: 50px;
+    --display-large-line-height: 56px;
+    --display-medium-font-size: 39px;
+    --display-medium-line-height: 45px;
+    --display-small-font-size: 32px;
+    --display-small-line-height: 39px;
+    --headline-large-font-size: 28px;
+    --headline-large-line-height: 35px;
+    --headline-medium-font-size: 24px;
+    --headline-medium-line-height: 32px;
+    --headline-small-font-size: 21px;
+    --headline-small-line-height: 27px;
+    --body-large-font-size: 16px;
+    --body-large-line-height: 23px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --display-large-font-size: 57px;
+    --display-large-line-height: 64px;
+    --display-medium-font-size: 45px;
+    --display-medium-line-height: 52px;
+    --display-small-font-size: 34px;
+    --display-small-line-height: 44px;
+    --headline-large-font-size: 32px;
+    --headline-large-line-height: 40px;
+    --headline-medium-font-size: 28px;
+    --headline-medium-line-height: 36px;
+    --headline-small-font-size: 24px;
+    --headline-small-line-height: 32px;
+    --body-large-font-size: 20px;
+    --body-large-line-height: 28px;
+  }
+}
+
+.retro {
+  border: 2px solid #333;
+  padding: 12px 20px;
+  box-shadow: 6px 6px 0 #333; /* ombre nette */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
